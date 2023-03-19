@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Thymeleaf-trainer</title>
+</head>
+<body>
+
+<h2>About Subjects</h2>
+
+<div align="center"> 
+
+
+</div>
+
+<ul>
+    <li th:each="Subjects : ${Subjects}">
+        <span th:text="${Subjects.id}">Default</span>
+        <span th:text="${Subjects.name}">Default</span>
+        <span th:text="${Subjects.english}">Default</span>
+        <span th:text="${Subjects.math}">Default</span>
+        <span th:text="${Subjects.chinese}">Default</span>
+        <span th:text="${Subjects.liberal}">Default</span>
+    </li>
+</ul>
+<a th:href="@{/home}">Back</a>
+</body>
+</html>
