@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Thymeleaf-trainer</title>
+<link type="text/css" rel="stylesheet" href="/css/chatstyle.css"/>
+</head>
+<body>
+
+
+
+<div class = "top" align="center">
+
+<h1>Tutor Recommended Subjects</h1>
+
+<table class="TopRatedTutors">
+
+    <tr th:each="Subjects : ${Subjects}">
+        <th>ID :</th>
+        <td th:text="${Subjects.id}">ID</td>
+        <th>Name :</th>
+        <td th:text="${Subjects.name}">Name</td>
+        <th>English :</th>
+        <td th:text="${Subjects.english}">English</td>
+        <th>Maths :</th>
+        <td th:text="${Subjects.math}">Math</td>
+        <th>Chinese :</th>
+        <td th:text="${Subjects.chinese}">Chinese</td>
+        <th>Liberal :</th>
+        <td th:text="${Subjects.liberal}">Liberal</td>
+    
+
+    </tr>
+</table>
+<br>
+<br>
+</div>
+
+<a th:href="@{/home}">Back</a>
+</body>
+</html>
+
+
+
+
+    
+   
